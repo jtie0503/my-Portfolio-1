@@ -1,0 +1,118 @@
+
+body{
+  font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.nav-link{
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    background-color: lightblue;
+    color: white;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-progress {
+    height: 35px;  /* Taller progress bars */
+    width: 100%;   /* Full width */
+    max-width: 700px; /* Extra wide on large screens */
+    margin: 0 auto; /* Center the bars */
+}
+.custom-progress {
+    height: 30px;
+    max-width: 100%;
+  }
+  @media (min-width: 992px) {
+    .custom-progress {
+      max-width: 800px;
+    }
+  }
+  .custom-progress {
+    height: 30px;
+    max-width: 100%;
+  }
+  @media (min-width: 992px) {
+    .custom-progress {
+      max-width: 800px;
+    }
+  }
+
+  .nav-item.dropdown {
+    position: static;
+  }
+
+  @media(max-width:990px){
+    section{
+      height: fit-content;
+      padding: 30px 0;
+    }
+    .col-lg-4, .col-lg-6 {
+      margin: 20px 0;
+    }
+  }
+
+
+
+  .progress-bar {
+    width: 0%;
+    opacity: 0;
+    transition: opacity 0.6s ease, width 2s ease;
+}
+
+/* Keyframe animation for progress bars */
+@keyframes animateProgress {
+    0% {
+        width: 0%;
+        opacity: 1;
+    }
+    100% {
+        width: var(--progress);
+        opacity: 1;
+    }
+}
+
+/* Set the progress bar width based on custom properties */
+.progress-bar.bg-success { --progress: 90%; }
+.progress-bar.bg-info { --progress: 85%; }
+.progress-bar.bg-warning { --progress: 80%; }
+.progress-bar.bg-primary { --progress: 80%; }
+.progress-bar.bg-danger { --progress: 84%; }
+.progress-bar.bg-dark { --progress: 80%; }
+
+/* Animate progress bars when the page loads */
+.progress-bar {
+    animation: animateProgress 2s forwards;
+}
+
+/* Apply a delay to the animations */
+.progress-bar.bg-success { animation-delay: 0.2s; }
+.progress-bar.bg-info { animation-delay: 0.4s; }
+.progress-bar.bg-warning { animation-delay: 0.6s; }
+.progress-bar.bg-primary { animation-delay: 0.8s; }
+.progress-bar.bg-danger { animation-delay: 1s; }
+.progress-bar.bg-dark { animation-delay: 1.2s; }
+
+
+#icons i{
+  text-decoration: none;
+  color: blueviolet;
+  transition: transform 0.3s ease-in-out;
+}
+
+#icons i:hover{
+  transform: translateY(-10px);
+}

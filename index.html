@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/searching.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+    </style>
+  </head>
+  <body>
+      
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark py-3 fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Personal Portfolio</a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                  <h5>Portfolio</h5>
+                  <img src="img/searching.png" alt="" width="50px">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+              
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" href="#" id="projectDropdown" role="button" data-bs-toggle="dropdown">Project</a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Flower Shop WEbsite</a></li>
+                      </ul>
+
+                      
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                  </ul>
+                  <div class="d-flex ">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </nav>
+
+       <!--Home Section -->
+      <section id="home" class="bg-dark text-light text-center text-lg-start py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center mb-4">
+              <img src="img/LLANTOS,JOHN TRISTAN V31137.png" alt="Profile" class="img-fluid rounded-circle" width="300">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold">Hello, I'm John Tristan Llantos</h1>
+              <p class="fs-5">I am a Web Developer</p>
+              <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+                <button class="btn btn-info">My Resume</button>
+                <button class="btn btn-outline-info">Hire Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+       <!-- About Section -->
+      <section id="about" class="py-3">
+        <div class="container text-center">
+          <h2>About Me</h2>
+          <P class="fs-3">I have a solid background in creating user-friendly and responsive web 
+            applications as a Front-End Developer. I gained expertise in HTML, CSS, JavaScript, and contemporary 
+            frameworks like React after finishing my bootcamp training. I approach problem-solving differently
+             because of my experience as a certified electrical engineer, which combines creative web creation with analytical thinking.
+
+      </P>
+      <P class="fs-3">I love transforming concepts into useful and aesthetically pleasing websites since I'm passionate
+             about creating seamless digital experiences. I enjoy coming up with solutions that improve user engagement, 
+             whether that be through speed optimization or the design of interactive user interface elements.
+      </P>
+     
+     <div class="d-flex gap-2 align-items-center justify-content-center">
+      <button class="btn btn-dark">Read More</button>
+      <button class="btn btn-outline-dark">Contact Me</button>
+     </div>
+    </div>
+      </section>
+
+      <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-dark"     >
+      <div class="container">
+          <h2 class="text-center mb-5 text-light" >Projects</h2>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card project-card mb-4">
+                      <img src="img/frontend.png"  class="card-img-top" alt="Project 1" width="200" height="150" >
+                      <div class="card-body">
+                          <h5 class="card-title">"The Basics of Web Technologies: HTML, CSS, and JavaScript"</h5>
+                          <p class="card-text">HTML, CSS, JavaScript: What They Mean and How They Work"</p>
+                          <a href="https://jtie0503.github.io/html-foundationss/Index.html" class="btn btn-primary">View Project</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card project-card mb-4">
+                      <img src="img/cesar.png" class="card-img-top" alt="Project 2" width="200" height="150"> 
+                      <div class="card-body">
+                          <h5 class="card-title">"Revamping Cesar’s Flower Shop: A Front-End Developer's Project"</h5>
+                          <p class="card-text">"Developed a responsive, modern website for Cesar’s Flower Shop, focusing on customer engagement and seamless navigation."</p>
+                          <a href="https://jtie0503.github.io/cesar-sflowershop/" class="btn btn-primary">View Project</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="card project-card mb-4">
+                      <img src="img/logo.png" class="card-img-top" alt="Project 3" width="200" height="150">
+                      <div class="card-body">
+                          <h5 class="card-title">"Dopamine Bouquets: A Responsive Floral Showcase"</h5>
+                          <p class="card-text">Bouquets That Spark Happiness, Designed for Every Device.</p>
+                          <a href="
+                          https://jtie0503.github.io/Dopamine-Bouquets/" class="btn btn-primary"  rel="noopener noreferrer">
+                            View Project
+                        </a>
+                        
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+     <!-- Skill Section -->
+     <section id="skills" class="py-5">
+      <div class="container">
+          <h2 class="text-center">Skills</h2>
+          <div class="row justify-content-center">
+              <div class="col-lg-6">
+                  <h4>HTML</h4>
+                  <div class="progress custom-progress mb-3">
+                      <div class="progress-bar bg-success" data-width="90%">90%</div>
+                  </div>
+                  <h4>CSS</h4>
+                  <div class="progress custom-progress mb-3">
+                      <div class="progress-bar bg-info" data-width="85%">85%</div>
+                  </div>
+                  <h4>JavaScript</h4>
+                  <div class="progress custom-progress mb-3">
+                      <div class="progress-bar bg-warning" data-width="85%">80%</div>
+                  </div>
+              </div>
+              
+              <div class="col-lg-6">
+                  <h4>Bootstrap</h4>
+                  <div class="progress custom-progress mb-3">
+                      <div class="progress-bar bg-primary" data-width="80%">80%</div>
+                  </div>
+                  <h4>PHP</h4>
+                  <div class="progress custom-progress mb-3">
+                      <div class="progress-bar bg-danger" data-width="85%">85%</div>
+                  </div>
+                  <h4>MySQL</h4>
+                  <div class="progress custom-progress mb-3">
+                      <div class="progress-bar bg-dark" data-width="80%">80%</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+  
+
+
+       <!-- contact Section -->
+      <section id="contact" class="py-5 bg-dark  text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+              <img src="img/web.png" alt="" class="img-fluid rounded"  width="400"  >
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label for="name" class="form-label text-light fs-5">Name</label>
+                <input type="text" name="" id="" class="form-control" placeholder="Enter Your Name">
+              </div>
+
+              <div class="mb-3">
+                <label for="E-mail" class="form-label text-light fs-5">Email</label>
+                <input type="E-mail" name="" id="" class="form-control" placeholder="Enter Your E-mail">
+              </div>
+
+              <div class="mb-3">
+                <label for="Message" class="form-label text-light fs-5">Message</label>
+               <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Enter Your Message"></textarea>
+              </div>
+                <button class="btn btn-light mb-3 d-flex justify-content-center align-items-center">Submit</button>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--footer-->
+      <footer id="footer bg-danger ">
+       
+         
+        <div class="icons text-center icons text-info bg-dark" id="icons">
+           
+            <a href="https://www.facebook.com/johntristan.llantos.7"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.tiktok.com/@jaytie_"><i class="bx bxl-tiktok"></i></a>
+           <a href="https://conf.viber.com/obRQCxtjOEHUNTLqjG7A1A"><i class="fab fa-viber"></i></i></a>
+           <a href="https://www.instagram.com/jaytie_03/"><i class="bx bxl-instagram"></i></a>
+        </div>
+
+       
+
+        <div class="copyright text-center bg-dark text-light">
+            &copy; Copyright <strong></strong> . All Rigths Reserved 2025
+        </div>
+        <div class="credite text-center bg-dark text-light style="text-decoration: none;>
+            Designed by <a href="#" style="text-decoration: none; "><span>John Tristan Llantos</span></a>
+        </div>
+ 
+
+     </footer>
+
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            progressBars.forEach(function(bar) {
+                bar.style.width = bar.getAttribute('data-width') + '%';
+            });
+        });
+    </script>
+  </body>
+</html>
